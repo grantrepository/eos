@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: eosio build
 
 on: [push]
 
@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v1.8.0
     - name: build
       run: ./scripts/eosio_build_ubuntu.sh -s MIS
