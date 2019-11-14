@@ -1,0 +1,13 @@
+name: eosio build
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1.8.0
+    - name: build
+      run: ./scripts/eosio_build_ubuntu.sh -s MIS
